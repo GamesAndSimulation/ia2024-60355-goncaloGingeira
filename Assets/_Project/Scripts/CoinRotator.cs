@@ -17,13 +17,12 @@ namespace Platformer
             transform.RotateAround(coin.transform.position, Vector3.up, speed * Time.deltaTime);
         }
         
-        private void OnCollisionEnter(Collision collision) {
-            if (collision.gameObject.CompareTag("Player"))
-            {   
-                coinSFX.Play();
-                coinManager.AddCoins();
-                coin.SetActive(false);
-            }
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (!collision.gameObject.CompareTag("Player")) return;
+            coinSFX.Play();
+            coinManager.AddCoins();
+            coin.SetActive(false);
         }
     }
 }

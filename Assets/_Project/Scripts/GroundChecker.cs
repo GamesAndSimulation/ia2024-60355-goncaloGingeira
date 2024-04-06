@@ -7,7 +7,7 @@ namespace Platformer
     public class GroundChecker : MonoBehaviour {
         
         [SerializeField] LayerMask groundLayers;
-        [SerializeField] float groundDistance = 0.2f; // need to confirm this value
+        [SerializeField] float groundDistance = 0.2f;
 
         public bool IsGrounded;
 

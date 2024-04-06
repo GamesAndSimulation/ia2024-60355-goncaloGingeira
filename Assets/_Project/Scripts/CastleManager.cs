@@ -17,6 +17,7 @@ namespace Platformer
         
         float maxDistance = 40f;
         int maxHealth = 100;
+        public bool canReleasePrisoner = false;
         
         void Start()
         {
@@ -47,16 +48,21 @@ namespace Platformer
             }
             
         }
-
-
+        
         void BossDefeated()
         {
             if (Boss.health <= 0)
             {
                 OpenDoors();
                 jailDoor.SetActive(false);
+                ReleasePrisoner();
             }
             
+        }
+        
+        void ReleasePrisoner()
+        {
+            canReleasePrisoner = true;
         }
 
         public void OpenDoors()

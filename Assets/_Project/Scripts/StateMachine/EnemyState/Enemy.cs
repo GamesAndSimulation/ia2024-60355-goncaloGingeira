@@ -33,7 +33,7 @@ namespace Platformer
             var wanderState = new EnemyWanderState(this, animator, agent, wanderRadius);
             var chaseState = new EnemyChaseState(this, animator, agent, playerDetector.Player);
             var attackState = new EnemyAttackState(this, animator, agent, playerDetector.Player);
-            var dieState = new EnemyDieState(this, animator, agent);
+            var dieState = new EnemyDieState(this, animator);
 
             
             At(wanderState, chaseState, new FuncPredicate(() => playerDetector.CanDetectPlayer()));
@@ -46,8 +46,6 @@ namespace Platformer
         }
         
         void At(IState from, IState to, IPredicate condition) => stateMachine.AddTransition(from, to, condition);
-        void Any(IState to, IPredicate condition) => stateMachine.AddAnyTransition(to, condition);
-        
         
         void Update()
         {

@@ -4,12 +4,10 @@ using UnityEngine.AI;
 
 namespace Platformer {
     public class EnemyDieState : EnemyBaseState {
-        readonly NavMeshAgent agent;
         readonly Enemy enemy;
         readonly float dieDelay = 2.5f;
         
-        public EnemyDieState(Enemy enemy, Animator animator, NavMeshAgent agent) : base(enemy, animator) {
-            this.agent = agent;
+        public EnemyDieState(Enemy enemy, Animator animator) : base(enemy, animator) {
             this.enemy = enemy;
         }
         

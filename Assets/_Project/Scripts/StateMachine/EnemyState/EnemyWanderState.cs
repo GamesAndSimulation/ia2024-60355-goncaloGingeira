@@ -15,7 +15,7 @@ namespace Platformer
         public EnemyWanderState(Enemy enemy, Animator animator, NavMeshAgent agent, float wonderRadius) : base(enemy, animator)
         {
             this.agent = agent;
-            this.startPosition = enemy.transform.position;
+            startPosition = enemy.transform.position;
             this.wonderRadius = wonderRadius;
         }
         

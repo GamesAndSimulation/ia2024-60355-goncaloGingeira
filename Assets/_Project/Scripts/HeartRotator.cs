@@ -10,7 +10,7 @@ namespace Platformer
     {
         
         [SerializeField] GameObject heart;
-        [SerializeField] float speed;
+        [SerializeField] float speed = 70;
         [SerializeField] private AudioSource healSFX;
         
         void Update ()

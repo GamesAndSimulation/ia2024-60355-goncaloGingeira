@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle_Battle_SwordAndShield
+  m_Name: IdleNormal
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -189,7 +189,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MoveFWD_Normal_InPlace_SwordAndShield
+  m_Name: MoveFWD
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -313,7 +313,7 @@ AnimatorStateMachine:
     m_Position: {x: 1040, y: 220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2360757953082361875}
-    m_Position: {x: 1170, y: 300, z: 0}
+    m_Position: {x: 270, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -954224608718234529}
     m_Position: {x: 1170, y: 380, z: 0}
